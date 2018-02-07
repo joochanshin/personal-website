@@ -71,7 +71,7 @@ body {
   position: absolute;
   animation: rotateL 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
   margin-left: -200px;
-  margin-top: -300px; }
+  margin-top: -350px; }
 
 #square2 {
   width: 175px;
@@ -81,7 +81,7 @@ body {
   position: absolute;
   animation: rotateR 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
   margin-left: 700px;
-  margin-top: -300px; }
+  margin-top: -350px; }
 
 .middle-text {
   position: absolute;
@@ -115,5 +115,17 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+#imgWrapper {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  margin-top: 400px;
+  animation: fadeIn 2s; }
+
+.m_ {
+  margin-right: 50px; }
 
 /*# sourceMappingURL=main.css.map */

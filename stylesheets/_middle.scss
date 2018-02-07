@@ -37,3 +37,15 @@
 #p2{
 	@extend #p1;
 }
+
+#imgWrapper{
+	@include centerer;
+	width: 310px;
+	margin-top: 400px;
+	animation: fadeIn 2s;
+	//border: 1px solid black;
+}
+
+.m_{
+	margin-right: 50px;
+}
