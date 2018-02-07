@@ -1,0 +1,18 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(-45deg, $color4, $color2, $color3);
+    background-size: 2000% 500%;
+    animation: Gradient 3s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 33.3%
+    }
+    50% {
+        background-position: 66.6% 33.3%
+    }
+    100% {
+        background-position: 0% 33.3% 
+    }
+}
