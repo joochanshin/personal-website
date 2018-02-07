@@ -9,3 +9,26 @@
 	@extend .shape;
 	animation: blink_ 1.5s infinite alternate;
 }
+
+#triangle{
+	@include centerer;
+	width: $size2;
+	height: $size2;
+	border-radius:50%;
+	border: 1px solid white;
+	animation: fadeIn 1s ease-in;
+}
+
+#square1{
+	@include squarer;
+	animation: rotateL 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
+	margin-left: -200px;
+	margin-top: -300px;
+}
+
+#square2{
+	@include squarer;
+	animation: rotateR 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
+	margin-left: 700px;
+	margin-top: -300px;
+}

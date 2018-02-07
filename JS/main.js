@@ -38,8 +38,8 @@ setInterval(function(){
 
 setInterval(function(){
 	for(let k = 0; k < 4; k++){
-		document.getElementsByClassName("shape2")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape2")[k].style.marginTop = ""+getRandomInt(1000)+"px"; 
 	
-		document.getElementsByClassName("shape2")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape2")[k].style.marginLeft = ""+getRandomInt(2000)+"px"; 
 	}
 }, 3000);

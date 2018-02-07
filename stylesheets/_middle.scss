@@ -3,6 +3,7 @@
 }
 
 #h1{
+	animation: fadeIn 2s ease-in;
 	text-align: center;
 	font-size: 2.25rem;
     line-height: 1.3;
@@ -17,4 +18,22 @@
 	font-size: 1rem;
 	letter-spacing: 0.2rem;
 	font-weight: 100;
+}
+
+#logo{
+	@extend #p;
+	margin-top: 40px;
+	margin-left: -10px;
+	font-size: 4.25rem;
+	font-family: Snell Roundhand;
+}
+
+#p1{
+	@extend #p;
+	@include centerer;
+	// text-transform: none;
+}
+
+#p2{
+	@extend #p1;
 }
