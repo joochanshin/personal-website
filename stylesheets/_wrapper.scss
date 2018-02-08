@@ -33,3 +33,21 @@
 		background: none;}
 	100%{border-radius: 50%;}
 }
+
+@keyframes _hoverCIn_ {
+	0% {border-radius: 0%; 
+		background: none;}
+
+	1% {border-radius: 50%;
+		background: $colorT;}
+
+	100%{border-radius: 50%;}
+}
+
+@keyframes _hoverCOut_ {
+	0% {border-radius: 50%;
+		background: $colorT;}
+	1% {border-radius: 0%; 
+		background: none;}
+	100%{border-radius: 0%;}
+}

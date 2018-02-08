@@ -27,14 +27,14 @@
 
 #square1{
 	@include squarer;
-	animation: rotateL 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
+	animation: rotateL 1s ease-in-out infinite alternate;
 	margin-left: -200px;
 	margin-top: -350px;
 }
 
 #square2{
 	@include squarer;
-	animation: rotateR 1s ease-in-out infinite alternate, fadeIn 1s ease-in;
+	animation: rotateR 1s ease-in-out infinite alternate;
 	margin-left: 700px;
 	margin-top: -350px;
 }
