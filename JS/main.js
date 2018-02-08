@@ -56,18 +56,18 @@ setInterval(function(){
 
 $(document).ready(function(){
     $("#triangle").hover(function(){
-        $(this).css("animation", "_hoverTIn_ 100s ease");
+        $(this).css("animation", "_hoverTIn_ 50s ease");
         }, function(){
-        $(this).css("animation", "_hoverTOut_ 100s ease");
+        $(this).css("animation", "_hoverTOut_ 50s ease");
     });
     $("#square1").hover(function(){
-        $(this).css("animation", "rotateL 1s ease-in-out infinite alternate, _hoverCIn_ 100s ease");
+        $(this).css("animation", "rotateL 1s ease-in-out infinite alternate, _hoverCIn_ 50s ease");
         }, function(){
-        $(this).css("animation", "rotateL 1s ease-in-out infinite alternate, _hoverCOut_ 100s ease");
+        $(this).css("animation", "rotateL 1s ease-in-out infinite alternate, _hoverCOut_ 50s ease");
     });
      $("#square2").hover(function(){
-        $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCIn_ 100s ease");
+        $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCIn_ 50s ease");
         }, function(){
-        $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCOut_ 100s ease");
+        $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCOut_ 50s ease");
     });
 });
