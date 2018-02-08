@@ -186,6 +186,10 @@ body {
   transform-origin: left top;
   z-index: 1; }
 
+.m_ img {
+  transition: transform .5s;
+  transform: scale(1); }
+
 .m_:hover img {
   transition: transform .5s;
   transform: scale(1.5); }

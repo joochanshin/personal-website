@@ -55,6 +55,11 @@
 	//border: 1px solid red;
 }
 
+.m_ img{
+	transition: transform .5s;
+	transform: scale(1.0);
+}
+
 .m_:hover img{
 	transition: transform .5s;
 	transform: scale(1.5);
