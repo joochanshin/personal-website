@@ -1,3 +1,5 @@
+var width = $(window).width();
+var height = $(window).height();
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -5,17 +7,17 @@ function getRandomInt(max) {
 function onload_(){
 	for(let i = 0; i < 4; i++){
 		
-		document.getElementsByClassName("shape")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape")[i].style.marginTop = ""+getRandomInt(height)+"px"; 
 		
-		document.getElementsByClassName("shape")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape")[i].style.marginLeft = ""+getRandomInt(width)+"px"; 
 		
-		document.getElementsByClassName("shape1")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape1")[i].style.marginTop = ""+getRandomInt(height)+"px"; 
 		
-		document.getElementsByClassName("shape1")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape1")[i].style.marginLeft = ""+getRandomInt(width)+"px"; 
 		
-		document.getElementsByClassName("shape2")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape2")[i].style.marginTop = ""+getRandomInt(height)+"px"; 
 		
-		document.getElementsByClassName("shape2")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape2")[i].style.marginLeft = ""+getRandomInt(width)+"px"; 
 
 		document.getElementById("triangle").style.animation = "fadeIn 1s ease-in";
 		document.getElementById("square1").style.animation = "rotateL 1s ease-in-out infinite alternate, fadeIn 1s ease-in";
@@ -30,25 +32,25 @@ function onload_(){
 
 setInterval(function(){
 	for(let i = 0; i < 4; i++){
-		document.getElementsByClassName("shape")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape")[i].style.marginTop = ""+getRandomInt(height)+"px"; 
 		
-		document.getElementsByClassName("shape")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape")[i].style.marginLeft = ""+getRandomInt(width)+"px"; 
 	}
 }, 2000);
 
 setInterval(function(){
 	for(let j = 0; j < 4; j++){
-		document.getElementsByClassName("shape1")[j].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape1")[j].style.marginTop = ""+getRandomInt(height)+"px"; 
 	
-		document.getElementsByClassName("shape1")[j].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape1")[j].style.marginLeft = ""+getRandomInt(width)+"px"; 
 	}
 }, 4000);
 
 setInterval(function(){
 	for(let k = 0; k < 4; k++){
-		document.getElementsByClassName("shape2")[k].style.marginTop = ""+getRandomInt(1000)+"px"; 
+		document.getElementsByClassName("shape2")[k].style.marginTop = ""+getRandomInt(height)+"px"; 
 	
-		document.getElementsByClassName("shape2")[k].style.marginLeft = ""+getRandomInt(2000)+"px"; 
+		document.getElementsByClassName("shape2")[k].style.marginLeft = ""+getRandomInt(width)+"px"; 
 	}
 }, 3000);
 
