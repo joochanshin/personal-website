@@ -16,7 +16,13 @@
 	height: $size2;
 	border-radius:50%;
 	border: 1px solid white;
-	animation: fadeIn 1s ease-in;
+	// animation: fadeIn 1s ease-in;
+}
+
+#triangle:hover{
+	background: gray;
+	opacity: .7;
+	animation: _hoverTIn_ 100s ease infinite alternate;
 }
 
 #square1{

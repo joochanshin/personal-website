@@ -17,6 +17,10 @@ function onload_(){
 		
 		document.getElementsByClassName("shape2")[i].style.marginLeft = ""+getRandomInt(2000)+"px"; 
 
+		document.getElementById("triangle").style.animation = "fadeIn 1s ease-in";
+		setTimeout(function(){
+			document.getElementById("triangle").style.animation = "none";
+		}, 1000);
 	}
 }
 
@@ -43,3 +47,11 @@ setInterval(function(){
 		document.getElementsByClassName("shape2")[k].style.marginLeft = ""+getRandomInt(2000)+"px"; 
 	}
 }, 3000);
+
+$(document).ready(function(){
+    $("#triangle").hover(function(){
+        $(this).css("animation", "_hoverTIn_ 100s ease");
+        }, function(){
+        $(this).css("animation", "_hoverTOut_ 100s ease");
+    });
+});
