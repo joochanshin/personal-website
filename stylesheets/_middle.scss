@@ -40,12 +40,28 @@
 
 #imgWrapper{
 	@include centerer;
-	width: 310px;
+	width: 270px;
 	margin-top: 400px;
 	animation: fadeIn 2s;
-	//border: 1px solid black;
+	border: 1px solid black;
 }
 
 .m_{
 	margin-right: 50px;
+	@include centerer;
+	position: static;
+	transform-origin: left top;
+	z-index: 1;
+	//border: 1px solid red;
 }
+
+.m_:hover img{
+	transition: transform .5s;
+	transform: scale(1.5);
+}
+
+#email {
+	margin-right: 0px;
+	//border: 1px solid blue;
+}
+

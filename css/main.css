@@ -58,6 +58,16 @@
     background: none; }
   100% {
     border-radius: 0%; } }
+@keyframes imgsIn_ {
+  0% {
+    -webkit-transform: scale(1); }
+  100% {
+    -webkit-transform: scale(2); } }
+@keyframes imgsOut_ {
+  0% {
+    -webkit-transform: scale(2); }
+  100% {
+    -webkit-transform: scale(1); } }
 body {
   animation: fadeIn 1s ease-in;
   font-family: Arial;
@@ -161,11 +171,26 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 310px;
+  width: 270px;
   margin-top: 400px;
-  animation: fadeIn 2s; }
+  animation: fadeIn 2s;
+  border: 1px solid black; }
 
 .m_ {
-  margin-right: 50px; }
+  margin-right: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: static;
+  transform-origin: left top;
+  z-index: 1; }
+
+.m_:hover img {
+  transition: transform .5s;
+  transform: scale(1.5); }
+
+#email {
+  margin-right: 0px; }
 
 /*# sourceMappingURL=main.css.map */

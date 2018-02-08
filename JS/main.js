@@ -1,5 +1,5 @@
-var width = $(window).width();
-var height = $(window).height();
+var width = $(window).width() - 50;
+var height = $(window).height() - 50;
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -65,7 +65,7 @@ $(document).ready(function(){
         }, function(){
         $(this).css("animation", "rotateL 1s ease-in-out infinite alternate, _hoverCOut_ 50s ease");
     });
-     $("#square2").hover(function(){
+    $("#square2").hover(function(){
         $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCIn_ 50s ease");
         }, function(){
         $(this).css("animation", "rotateR 1s ease-in-out infinite alternate, _hoverCOut_ 50s ease");
