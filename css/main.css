@@ -173,8 +173,7 @@ body {
   transform: translate(-50%, -50%);
   width: 270px;
   margin-top: 400px;
-  animation: fadeIn 2s;
-  border: 1px solid black; }
+  animation: fadeIn 2s; }
 
 .m_ {
   margin-right: 50px;
