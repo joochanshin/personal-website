@@ -21,7 +21,7 @@
     <div class="shape2"></div>
     <div class="middle-text">
     	<div id="triangle">
-    		<h1 id="logo">.JS</h1>
+    		<h1 id="logo" onclick="clickedAbout()">.JS</h1>
     	</div>
     	<br><br><br><br><br>
     	<br><br><br><br><br>
@@ -40,6 +40,25 @@
     		<a class="m_" id="linkedin" href="https://www.linkedin.com/in/joochanshin"><img src="img/linkedin.svg" alt="LinkedIn" style="width:50px;height:50px"></a>
     		<a class="m_" id="email" href="mailto:joochanshin2@gmail.com"><img src="img/mail.png" alt="Email" style="width:55px;height:50px"></a>
     	</div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="header-text">ABOUT ME</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="modal_P">Hello! My name is Joo Chan Shin, and I am a current senior at Drexel University studying Biochemistry, Mathematics, and Physics</p>
+                    <hr>
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn" onclick="clicked()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     	
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
